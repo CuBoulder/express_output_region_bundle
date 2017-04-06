@@ -1,0 +1,17 @@
+<?php
+
+
+/**
+ * Implements hook_install().
+ *
+ * Installs expressregion theme and sets it to be ignored by the express
+ * theme picker.
+ */
+ 
+function express_output_region_bundle_install() {
+  $hidden_themes = variable_get('express_theme_picker_theme_ignore', array());
+  $hidden_themes['expressregion'] = 1;
+  variable_set('express_theme_picker_theme_ignore', $hidden_themes);
+  theme_enable(array('expressregion'));
+  cache_clear_all();
+}

@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_custom_theme().
+ *
+ * Switch to expressregion theme.
+ */
+
+function express_output_region_bundle_custom_theme() {
+  if (isset($_GET['output-region']) && (isset($_GET['region']))) {
+    return 'expressregion';
+  }
+}

@@ -1,0 +1,4 @@
+name = Express Output Region
+core = 7.x
+package = express_output_region_bundle
+description = Provides theme switching to output the html markup of a specified region
