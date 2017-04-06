@@ -2,7 +2,6 @@ name = Express Output Region
 core = 7.x
 package = express_output_region_bundle
 description = Provides theme switching to output the html markup of a specified region
-package = express_output_region_bundle
 core = 7.x
 version = 7.x-1.0
 project = express_output_region_bundle
